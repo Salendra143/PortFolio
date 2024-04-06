@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
+:root {
+    --bg-color: #1f1f21;
+    --text-color: #fff;
+    --main-color: #ffae00;
+}
+ 
+* {
+    color: black;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro";
+    scroll-behavior: smooth;
+    
+    
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.container {    
+    max-width: 1080px;
+    margin: 0px auto;
+    height: 100%;
+    
+    
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+  
+ 
+} 
+
+
+.logo {
+    font-size: 3rem;
+    color: #ffae00;
+}
+
+.logo span {
+    font-size: 2.3rem;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.navigation a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.navigation a:hover {
+    color: #ffae00;
+}
+
+.hero {
+    height: 100vh;
+    margin-top: 12%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #1f1f21; */
+    gap: 2rem;
+
+}
+
+.left h1 {
+    font-size: 2.5rem;
+}
+
+.left h3 {
+    font-size: 2rem;
+}
+
+.role {
+    color: #ffae00;
+    font-weight: 800;
+}
+
+.left p {
+    font-size: 1.2rem;
+}
+
+.btn>button {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    background-color: #ffae00;
+    border: none;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+    border-radius: 5px;
+    border: 1px solid #ffae00;
+}
+
+.btn>button:hover {
+    background-color: #1f1f21;
+    color: #ffae00;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.userimg {
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+    background-image: url(./punitimge/user.jpeg);
+    background-position: center;
+    background-size: cover;
+    animation: user 3s ease-in infinite;
+}
+
+@keyframes user {
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* 
+projects */
+.project{
+    max-width: 1080px;
+    margin: 0px auto;
+}
+
+.project h1 {
+    text-align: center;
+    font-size: 5vw;
+    color: #ffae00;
+    padding-bottom: 2rem;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+
+.card {
+    width: 30%;
+ 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    filter: grayscale(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transition-duration: 2s;
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px #71189a);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.card:hover span {
+    opacity: 1;
+    bottom: 40%;
+    transform: translateY(-50%) rotate(360deg);
+    transition: 1s;
+}
+
+.card span {
+    position: absolute;
+    bottom: 0;
+    width: fit-content;
+    height: 16%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    color: #fff;
+    padding: 25px;
+    opacity: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+
+/* contact */
+.contact{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-left{
+    width: 50%;
+
+}
+.contact-left h2{   
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+.contact-left h2 span{
+    color: #ffae00;
+}
+.contact-left .img{
+    width: 400px;
+    height: 400px;
+    margin-top: 4rem;
+}
+.contact-left img{
+    border-radius: 100%;
+animation: user 3s ease-in infinite;
+}
+
+@keyframes user {
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+.contact-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.contact-right input{
+    padding: 1rem;
+    margin: 0px 2rem;
+    background-color: #ffae00;
+    filter: drop-shadow(2px 4px 1px);
+    border: none;
+    outline: none;
+}
+#send{
+    margin-left: 2rem;
+}
+#send button{
+    padding: 0.5rem 2rem;
+}
+.contact-right input::placeholder{ 
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+
+
+/* footer */
+.footer{
+    width: 100%;    
+    height: 30%;
+    display: flex;
+    align-items: center ;
+}
+.content{
+    width: 1080px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ffae00;
+}
+.items a{
+    font-size: 2rem;
+    padding-right: 2rem;
+    text-decoration: none;
+    color: black;
+}
+.items a:hover{
+    color: #ffae00;
+    transition: 1s;
+}   
+.icons i{
+    font-size: 2rem;
+    padding-right: 1.5rem;  
+    cursor: pointer;
+    color: black;
+}
+.icons i:hover{
+    color: #ffae00;
+    transition: 1s;
+}
+
+
+
+/* 
+responsive */
+@media (max-width:600px) {
+    .navigation>a{
+        font-size: small;
+
+    }
+    .hero{
+        margin-top: -5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+}
+    .left{
+        width: 100%;
+        padding: 8px;
+    }
+    .right{
+        margin-left: 40px;
+             
+    }
+    .userimg{
+        width: 250px;
+        height: 250px;
+        margin-top: 2rem;
+    }
+    #project{
+        margin-top: 250px;
+    }
+    .project-container{
+        margin-left: 20px;
+    }
+
+
+/* footer */
+    .content{
+        margin-top: 700px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .items a{
+        font-size: 7vw;
+    }
+   
+}
+
+
+@media (max-width:600px) {
+    .contact{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;       
+}
+     
+     .contact-left{
+        width: 100%;
+    }
+     .contact-left h2{
+        text-align: center;
+    }
+    .contact-left .img{
+         margin-left: 50px;
+        margin-bottom: -50px;    
+    }
+    .contact-right{
+        width: 100%;
+    }
+     .contact-right input{
+        width: 200px; 
+        display: flex;
+
+    }
+}
+
+
+
+
+
+@media (max-width:770px) {
+        .contact-left img{
+            width: 300px;
+            height: 300px;
+            
+    }
+    .contact-left h2{
+        text-align: center;
+    }
+    .hero{
+        margin-top: -5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+}
+    .left{
+        width: 100%;
+        padding: 8px;
+    }
+    .right{
+        margin-left: 40px;
+             
+    }
+    .userimg{
+        width: 250px;
+        height: 250px;
+        margin-top: 2rem;
+    }
+    #project{
+        margin-top: 150px;
+    }
+
+
+}
